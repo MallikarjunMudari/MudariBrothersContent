@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudari's Content</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+
+
+
+    <style>
+        body {
+            background: #f4f7fb;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .dashboard-btn {
+            margin-top: 20px;
+            padding: 14px 35px;
+            border-radius: 50px;
+
+            background: #ff9800;
+            border: none;
+
+            color: #fff !important;
+            font-size: 1.25rem;
+            font-weight: 700;
+
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+        }
+
+        .dashboard-btn:hover {
+            background: #f57c00;
+            color: white !important;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 152, 0, 0.5);
+        }
+
+        /* Carousel */
+        .carousel-item img {
+            height: 700px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        /* YouTube Cards */
+        .video-card {
+            transition: 0.3s;
+            border: none;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+
+                /* Image Gallery */
+        .image-card {
+            border: none;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color:gainsboro;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .image-card .card-body {
+            text-align: center;
+        }
+
+        .image-card h5 {
+            margin: 0;
+        }
+
+
+
+        /* Highlights */
+        .highlight-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .highlight-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .highlight-icon {
+            font-size: 40px;
+            color: #2a5298;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #1e3c72;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>🌟 Mudari's Content</h1>
+        <p>Your personal hub for Photos, Videos and Ledger Dashboard</p>
+
+        <a href="https://mallikarjunmudari.github.io/TaadoorLedgerView/" target="_blank"
+            class="btn btn-warning dashboard-btn">
+            <i class="fas fa-chart-line"></i> Open Ledger Dashboard
+        </a>
+    </section>
+
+    <div class="container mt-5">
+
+        <!-- Photo Slider -->
+        <h2 class="text-center section-title">📸 Photo Gallery
+            <small class="text-muted fst-italic">Click on image for photo colloectoins </small>
+        </h2>
+
+        <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active"></button>
+
+                <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1"></button>
+
+                <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <a href="https://photos.app.goo.gl/5V5RjL4PZ3Dxqowh9" target="_blank">
+                        <img src="Taadoor_Group_image_May_2026.jpg" alt="Photo 1">
+                    </a>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <a href="https://photos.app.goo.gl/gPQ3KRw61SnE2zzg6" target="_blank">
+                        <img src="Taadoor_patnalu_PhotosCover.jpg" alt="Photo 2">
+                    </a>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <a href="https://photos.app.goo.gl/9YimxmmXcwGJCgez7" target="_blank">
+                        <img src="Mudari Brother 2024 taadoor pics.jpg" alt="Photo 3">
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Previous Button -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <!-- Next Button -->
+            <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+
+        <!-- YouTube Section -->
+        <div class="mt-5">
+
+            <h2 class="text-center section-title">🎥 Featured Videos</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <a href="https://youtu.be/n62DHC8NRCI" target="_blank">
+                            <img src="Taadoor_patnalu_thumnail_1.jpg">
+                            <div class="card-body">
+                                <h5>Mudari family Taadoor Patnalu Part1</h5>                                
+                            </div>
+                             </a>
+                    </div>               
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <a href="https://youtu.be/Pk6ON93jY8I?si=vGbwXixjlRCYSy4S" target="_blank">
+                            <img src="Taadoor_patnalu_thumnail_2.jpg">
+                            <div class="card-body">
+                                <h5>Mudari family Taadoor Patnalu Part2</h5> 
+                            </div>
+                             </a>
+                    </div>               
+                </div>
+
+               <div class="col-md-4">
+                    <div class="card video-card">
+                        <a href="https://youtu.be/97o-QTZR9kc?si=s18oZsBKctnyMBAq" target="_blank">
+                            <img src="Taadoor_patnalu_thumnail_3.jpg">
+                            <div class="card-body">
+                                <h5>Mudari family Taadoor Patnalu Part3</h5> 
+                            </div>
+                             </a>
+                    </div>               
+                </div>
+
+               <div class="col-md-4">
+                    <div class="card video-card">
+                        <a href="https://youtu.be/V9aedxaFq5U?si=GVCU1fVLIFLlGcxK" target="_blank">
+                            <img src="Taadoor_patnalu_thumnail_4.jpg">
+                            <div class="card-body">
+                                <h5>Mudari family Taadoor Patnalu Part4</h5> 
+                            </div>
+                             </a>
+                    </div>               
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Google Photos Section -->
+        <div class="mt-5">
+
+            <h2 class="text-center section-title">📸 Family Photos</h2>
+
+            <div class="row g-4">
+
+                <!-- Photo Album 1 -->
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <a href="https://photos.app.goo.gl/5V5RjL4PZ3Dxqowh9" target="_blank">
+                            <img src="Taadoor_Group_image_May_2026.jpg"
+                                class="card-img-top"
+                                alt="Mudari Family Memories">
+                            <div class="card-body">
+                                <h5>Family trip to taadoor May 2026</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo Album 2 -->
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <a href="https://photos.app.goo.gl/gPQ3KRw61SnE2zzg6" target="_blank">
+                            <img src="Taadoor_patnalu_PhotosCover.jpg"
+                                class="card-img-top"
+                                alt="Taadoor Family Gathering">
+                            <div class="card-body">
+                                <h5>Mudari Family Patnalu images 2024</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo Album 3 -->
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <a href="https://photos.app.goo.gl/9YimxmmXcwGJCgez7" target="_blank">
+                            <img src="Mudari Brother 2024 taadoor pics.jpg"
+                                class="card-img-top"
+                                alt="Family Memories">
+                            <div class="card-body">
+                                <h5>Mudari Brothers 2024 taadoor visit pics</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo Album 4 -->
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <a href="https://photos.app.goo.gl/zMsLYUrhjceMEdTQ8" target="_blank">
+                            <img src="Mudari Brothers 2023 taadoor pics.jpg"
+                                class="card-img-top"
+                                alt="Taadoor Memories">
+                            <div class="card-body">
+                                <h5>Mudari Brothers 2023 taadoor pics</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo Album 5 -->
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <a href="https://photos.app.goo.gl/WKgMbtPnpf2uSa6w5" target="_blank">
+                            <img src="Jithu camp visit 2023.jpg"
+                                class="card-img-top"
+                                alt="Taadoor Memories">
+                            <div class="card-body">
+                                <h5>Jithu camp visit 2023</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo Album 6 -->
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <a href="https://photos.app.goo.gl/4BYX83JvNDjfLu389" target="_blank">
+                            <img src="Mudari Brothers 2017 pics.jpg"
+                                class="card-img-top"
+                                alt="Taadoor Memories">
+                            <div class="card-body">
+                                <h5>Mudari Brothers 2017 pics</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Highlights -->
+        <div class="mt-5">
+
+            <h2 class="text-center section-title">✨ Highlights</h2>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="highlight-box text-center">
+                        <div class="highlight-icon">
+                            <i class="fas fa-chart-column"></i>
+                        </div>
+                        <h4>Ledger Dashboard</h4>
+                        <p>
+                            Track ledger information with easy navigation,
+                            reporting and visualization.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="highlight-box text-center">
+                        <div class="highlight-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h4>Photo Memories</h4>
+                        <p>
+                            Browse memorable moments and organized photo collections.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="highlight-box text-center">
+                        <div class="highlight-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h4>Video Content</h4>
+                        <p>
+                            Watch educational, travel and entertainment videos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h5>Mudari's Content</h5>
+        <p>Photos • Videos • Dashboard • Highlights</p>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
